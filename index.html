@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriFruit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="juice_images/about.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- 
+    google search google fonts, click on Google Fonts https://fonts.google.com
+    search for the fonts that you want, click on the fonts, click on Get font button
+    click on link radio button under web tag, click on copy code under the 
+    Embeded code in the <head> or your html
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!-- 
+google search cdnjs, click on cdnjs,                     ,search for font awesome, click on
+font awesome, click on copy url icon to copy this
+
+then creat a link tag and paste the api inside the href attribute
+-->
+<link rel="stylesheet" href="">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">AfriFruit.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                We deals with varieties or organic fruits
+            </h1>
+            <a href="#content" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- about section -->
+      <div id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About us</h2>
+                    <p>
+                        We are a creative team dedicated to farm healthy organic fruits for Africa. We have a great passion
+                        for planting organic fruits for for the global economy. We currently have clients from seven different 
+                        countries in the world. We believe in the power of a strong online presence and strive to keep on planting
+                        and harvesting organic fruits in order to make our fruit farming business accessible to the glob.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="juice_images/about.jpeg" alt="About us image">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- service section -->
+       <!-- to use the font-awesome api inside our head tags google search font-awesome-->
+       <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fa-solid fa-tractor"></i>
+                    <h3>Organic Fruit</h3>
+                    <p>
+                        we plant organic fruits that is healthy for human consumption.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-solid fa-pear"></i>
+                    <h3>Fruit Juice</h3>
+                    <p>
+                        we convert our organic fruits to fruits juice in a hygiene and high-performance 
+                        environment.
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                        Our market business have access to many market globally through digital marketing.
+                    </p>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- portfolio section -->
+
+       <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="juice_images/portfolio1.jpeg" alt="portfolio1">
+                    <div class="portfolio-caption">
+                        <h3>Fruit One</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="juice_images/portfolio2.jpeg" alt="portfolio2">
+                    <div class="portfolio-caption">
+                        <h3>Fruit Two</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="juice_images/portfolio3.jpeg" alt="portfolio3">
+                    <div class="portfolio-caption">
+                        <h3>Fruit Three</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- contact -->
+        <!-- redirect user to your weebsite after submitting to google form start -->
+         <script type="text/javascript">
+            var submitted = false;
+         </script>
+         <iframe 
+            name="hidden_iframe" 
+            id="hidden_iframe" 
+            style="display:none"
+            onload="if(submitted){window.location='#';}"></iframe>
+        <!-- redirect user to your weebsite after submitting to google form end -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <form 
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScVtP6dpgQGFwhuJFA144_iR9_ZrUAZ5KWW89RlGd8S75vUGA/formResponse"
+                    class="contact-form"
+                    method="post"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true"
+                    >
+                    <input type="text" placeholder="Name" name="entry.879404593" required>
+                    <input type="email" placeholder="Email" name="entry.369897391" required>
+                    <textarea placeholder="Message" required name="entry.1017133365" ></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">services</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#contact">contact</a>             
+                </div>
+                <p class="copyright">
+                    (c) 2025 AfriFruit. All right reserved.
+                </p>
+            </div>
+         </footer>
+</body>
+</html>
